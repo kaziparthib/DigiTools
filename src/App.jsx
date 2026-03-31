@@ -7,6 +7,7 @@ import './App.css'
 import Cart from './components/cart'
 import ToolsBanner from './components/ToolsBanner'
 import Tools from './components/Tools'
+import User from './components/User'
 
 const GetTools=async()=>{
   const res=await fetch("/tools.json");
@@ -21,12 +22,12 @@ function App() {
 
   return (
     <>
-    
+    <User></User>
     <ToolsBanner></ToolsBanner>
     {/* name of each tab group should be unique */}
-<div className="tabs tabs-box justify-center bg-transparent">
-  <input onClick={()=> setActiveTab("products")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="products" defaultChecked />
-  <input onClick={()=> setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${Carts.length})`}  />
+<div className="tabs tabs-box justify-center gap-1.5 bg-transparent">
+  <input onClick={()=> setActiveTab("products")} type="radio" name="my_tabs_1" className="tab rounded-full font-bold w-40 bg-[linear-gradient(to_bottom,_rgba(79,57,246,1)_0%,_rgba(149,20,250,1)_100%)] text-white" aria-label="products" defaultChecked />
+  <input onClick={()=> setActiveTab("cart")} type="radio" name="my_tabs_1" className="tab rounded-full font-bold w-40 bg-[linear-gradient(to_bottom,_rgba(79,57,246,1)_0%,_rgba(149,20,250,1)_100%)] text-white" aria-label={`Cart (${Carts.length})`}  />
   
 </div>
 
