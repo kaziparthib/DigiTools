@@ -4,7 +4,7 @@ const Footer=()=>{
     <>
     <div className="bg-black px-12 pt-10 pb-8">
 
-     <div className="flex justify-evenly pb-2.5 mb-2.5 ">
+     <div className="flex flex-col space-y-3 md:flex-row justify-evenly pb-2.5 mb-2.5 ">
 
      <div className="text-white">
       <h1 className="font-bold">DigiTools</h1>

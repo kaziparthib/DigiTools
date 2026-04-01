@@ -11,6 +11,7 @@ import User from './components/User'
 import NavBar from './components/navBar'
 import Acc from './components/CreateAccount'
 import Footer from './components/footer'
+import Pri from './components/pricing'
 
 const GetTools=async()=>{
   const res=await fetch("/tools.json");
@@ -39,6 +40,7 @@ function App() {
     {ActiveTab==="products" && <Tools toolsPromise={toolsPromise}  Carts={Carts} setCarts={setCarts} ></Tools>}
     {ActiveTab==="cart" && <Cart  Carts={Carts} setCarts={setCarts}></Cart>}
     <Acc></Acc>
+    <Pri></Pri>
     <Footer></Footer>
     </>
       
