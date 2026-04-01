@@ -8,6 +8,7 @@ import Cart from './components/cart'
 import ToolsBanner from './components/ToolsBanner'
 import Tools from './components/Tools'
 import User from './components/User'
+import NavBar from './components/navBar'
 
 const GetTools=async()=>{
   const res=await fetch("/tools.json");
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+    <NavBar></NavBar>
     <User></User>
     <ToolsBanner></ToolsBanner>
     {/* name of each tab group should be unique */}
