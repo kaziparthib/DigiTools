@@ -12,6 +12,7 @@ import NavBar from './components/navBar'
 import Acc from './components/CreateAccount'
 import Footer from './components/footer'
 import Pri from './components/pricing'
+import Banner from './components/Banner'
 
 const GetTools=async()=>{
   const res=await fetch("/tools.json");
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
     <NavBar></NavBar>
+    <Banner></Banner>
     <User></User>
     <ToolsBanner></ToolsBanner>
     {/* name of each tab group should be unique */}

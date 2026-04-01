@@ -51,7 +51,7 @@ const Pri=()=>{
             </ul>
           </div>
 
-          <button className="btn rounded-full w-full mt-2 bg-white">Start Pro Trial</button>
+          <button className="btn rounded-full w-full mt-2 bg-white"><span className="bg-gradient-to-b from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent"> Start Pro Trial</span></button>
         </div>
 
 
